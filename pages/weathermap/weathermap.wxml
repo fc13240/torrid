@@ -1,0 +1,60 @@
+<view class="container">
+    <view class="main-broadcast">
+        <view class="main-broadcast-location">
+            {{cityname}}
+        </view>
+        <view class="main-broadcast-type">
+            {{today.type}}
+        </view>
+        <view class="main-broadcast-todaysTemperature">
+            {{today.curTemp}}
+        </view>
+    </view>
+
+    <view class="today">
+        <view class="today-title">
+            今日 {{today.date}} {{today.week}}
+        </view>
+        <view class="today-detail">
+            <view class="cell">
+                <text class="component1">最高气温</text>
+                <image class="component2" src="../../assets/icons/up.png" mode="aspectFit" style="width: 20px; height: 20px; vertical-align: middle;"></image>
+                <text class="component3">{{today.hightemp}}</text>
+            </view>
+            <view class="cell">
+                <text class="component1">最低气温</text>                
+                <image class="component2" src="../../assets/icons/down.png" mode="aspectFit" style="width: 20px; height: 20px; vertical-align: middle;"></image>
+                <text class="component3">{{today.lowtemp}}</text>
+            </view>
+            <view class="cell">
+                <text class="component1">近期风向</text>                
+                <image class="component2" src="../../assets/icons/wind-cone.png" mode="aspectFit" style="width: 20px; height: 20px; vertical-align: middle;"></image>
+                <text class="component3">{{today.fengxiang}}</text>
+            </view>
+            <view class="cell">
+                <text class="component1">风力大小</text>                
+                <image class="component2" src="../../assets/icons/wind-power.png" mode="aspectFit" style="width: 20px; height: 20px; vertical-align: middle;"></image>
+                <text class="component3">{{today.fengli}}</text>
+            </view>
+            <view class="cell">
+                <text class="component1">天气状况</text>                
+                <image class="component2" src="../../assets/icons/cloudy.png" mode="aspectFit" style="width: 20px; height: 20px; vertical-align: middle;"></image>
+                <text class="component3">{{today.type}}</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="forecast">
+        <view class="weather-cell" wx:for="{{forecast}}" wx:for-item="day">
+            <text>{{day.week}}</text>
+            <text class="forcast-icon">{{day.type}}</text>
+            <!--<image class="forcast-icon" src="../../assets/icons/cloudy.png" mode="aspectFit" style="width: 25px; height: 25px; vertical-align: middle;"></image>-->
+            <text class="high-temp-text">{{day.higntemp}}</text>
+            <text class="low-temp-text">{{day.lowtemp}}</text>
+        </view>
+    </view>
+
+    <view class="copyright-section">
+        <text>©️{{copyRight.year}} Owner by {{copyRight.owner}} Version {{copyRight.version}}.</text>
+    </view>
+</view>

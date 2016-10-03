@@ -1,0 +1,11 @@
+{
+    "pages": [
+        "pages/search/search",
+        "pages/weathermap/weathermap"   
+    ],
+    "window": {
+        "navigationBarTitleText": "Torrid - 简单的一个天气应用",
+        "navigationBarTextStyle": "white"
+    },
+    "debug": true
+}

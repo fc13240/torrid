@@ -1,0 +1,95 @@
+.main-broadcast {
+    height: 180px;
+    color: white;
+    text-align: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.main-broadcast .main-broadcast-location {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-broadcast .main-broadcast-type {
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.main-broadcast .main-broadcast-todaysTemperature {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 5em;
+    font-weight: 100
+}
+
+.today {
+    font-size: 14px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.today-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.today-detail {
+    text-align: center;
+}
+
+.component1 {
+    margin-right: 10%;
+}
+
+.component2 {
+    margin-left: 15%;
+    margin-right: 10%
+}
+
+.component3 {
+    margin-left: 5%;
+}
+
+.weather-cell {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.forecast-weekday {
+    margin-right: 10%
+}
+
+.forcast-icon {
+    margin-left: 25%;
+    margin-right: 25%
+}
+
+.high-temp-text {
+    /*margin-left: 5%;*/
+    margin-right: 10px
+}
+
+.low-temp-text {
+    font-size: 14px;
+    color: whitesmoke;
+    left: 0px
+}
+
+.cell {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.copyright-section {
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}

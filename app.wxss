@@ -1,0 +1,11 @@
+page {
+    background-image: url("assets/background/blur1.jpg");
+    font-family: PingFang SC;
+    font-size: 12px
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    color: white
+}

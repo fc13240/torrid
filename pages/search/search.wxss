@@ -1,0 +1,65 @@
+.search-section {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    color: white;
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
+.copyright-section {
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    bottom: 10px;
+    position: fixed;
+    text-align: center;
+}
+
+.datasource-section {
+    clear: both;
+}
+
+.datasource-section .info {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    position: fixed;
+    margin-top: 50px;
+}
+
+.search-weather-input {
+    border-bottom: 1px solid white;
+    height: 44px;
+    font-size: 14px;
+    color: white;
+}
+
+.input-placeholder {
+    font-style: italic;
+}
+
+.history-search-section {
+    margin-left: 16%;
+    margin-right: 0%;
+    margin-top: 10px;
+    color: white
+}
+
+.history-list {
+    background-color: blue;
+    width: 100%;
+}
+
+.history-btn {
+    margin-top: 5%;
+    float: left; 
+    width: 33%;
+    font-weight: bold;
+    margin-left: 5%
+}

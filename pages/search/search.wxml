@@ -1,0 +1,32 @@
+<view class="container">
+    <form bindsubmit="searchSubmit" bindreset="searchReset">
+        <view class="search-section">
+            <input id="i" name="cityName" class="search-weather-input" placeholder="输入要查询的地区名称..." placeholder-class="input-placeholder" placeholder-style="color: white" />
+            <button class="submit-btn" type="default" size="mini" formType="submit">搜索</button>
+        </view>
+        <view class="history-search-section">
+            <view class="history-title">
+                <text class="title">
+                    历史查询记录：
+                </text>
+            </view>
+            <!-- 小程序js似乎无法调用 splice() 来操作数组 暂时无法使用缓存处理历史记录 此功能暂缓 -->
+            <view class="history-list">
+                <block wx:for="{{value}}" wx:for-index="count" wx:for-item="i">
+                    <button wx:if="{{count < 6}}" class="history-btn" size="mini" type="default" value="{{i.cityname}}" bindtap="tapToHistory">{{item}}</button>
+                </block>
+            </view>
+        </view>
+        <view class="datasource-section">
+            <text class="info">* 天气信息来源于 APIStore</text>
+        </view>
+        <view class="copyright-section">
+            <text>©️{{copyRight.year}} Owner by {{copyRight.owner}} Version {{copyRight.version}}.</text>
+        </view>
+    </form>
+</view>
+
+<!-- error toast -->
+<toast hidden="{{isHidden}}" bindchange="toastHidden" duration="1500" icon="safe_warn">
+    输入有误或者该城市暂不支持，请重新输入    
+</toast>
